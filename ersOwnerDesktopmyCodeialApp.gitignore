@@ -1,0 +1,17 @@
+[33mcommit 505bf048e694cbe30a78c1700dbe29c7b4e4755f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Varsha <varsha981sahu@gmail.com>
+Date:   Thu Jul 6 20:51:20 2023 +0530
+
+    setup static files access for layouts and pages
+
+[33mcommit 37a3b140adbb942009663f749348993382209388[m
+Author: Varsha <varsha981sahu@gmail.com>
+Date:   Thu Jul 6 16:34:42 2023 +0530
+
+    add a controller and router for a home
+
+[33mcommit 8b3136fb0bb10c7926803b45eea7dabfae29e380[m
+Author: Varsha <varsha981sahu@gmail.com>
+Date:   Thu Jul 6 16:03:55 2023 +0530
+
+    First commit: create all folder and index.js file setup like express call port listen
