@@ -12,6 +12,7 @@ const db = require('./config/mongoose');
 const session = require('express-session');
 const passport = require('passport');
 const passportLocal=require('./config/passport-local-strategy');
+const passportGoogle = require('./config/google');
 const MongoStore = require('connect-mongo');
 app.use(express.urlencoded());
 
@@ -39,8 +40,8 @@ app.use(session({
    cookie:{
       maxAge:(1000*60*100)
    },
-   store: new MongoStore({
-      mongoUrl: "mongodb://127.0.0.1/"
+   store: MongoStore.create({
+      mongoUrl: 'mongodb+srv://varsha:harsh@atlascluster.pznuoqu.mongodb.net/'
     },
   {
       mongooseConnection: db,
@@ -69,3 +70,6 @@ app.listen(port,function(err){
    console.log(`Server is  running on port: ${port}`); //interpolation
 
 });
+
+
+//https://drive.google.com/file/d/1B30beyLHnvu7HR8ciWicfb5C_kFDGig4/view
