@@ -5,6 +5,11 @@ Hosted URL: https://node-js-auth-c07o.onrender.com
 Git Repository link: https://github.com/VarshaSahu03/NodeJs_Authentication
 Video link: https://www.youtube.com/watch?v=Hu_osyowg28
 
+<--------------------------------------------------------------Nodejs Authentication------------------------------------------------------->
+
+This website is a Authentication site. User come in this site and sign up then sign in and reach out the home page. After sign out remove the user detail from database.
+I use Mongodb in this program. And connect in Atlus
+
 
 assets
      css 
