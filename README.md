@@ -1,6 +1,10 @@
 # NodeJs_Authentication
-Nodejs Authentication Site
-Folder Structure
+Nodejs Authentication 
+
+Hosted URL: https://node-js-auth-c07o.onrender.com
+Git Repository link: https://github.com/VarshaSahu03/NodeJs_Authentication
+Video link: https://www.youtube.com/watch?v=Hu_osyowg28
+
 
 assets
      css 
