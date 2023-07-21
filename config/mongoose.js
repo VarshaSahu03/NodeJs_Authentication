@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb+srv://varsha:harsh@atlascluster.pznuoqu.mongodb.net/', {
+mongoose.connect('mongodb+srv://varsha:harsh@cluster1.tkzilvd.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

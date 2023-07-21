@@ -41,7 +41,7 @@ app.use(session({
       maxAge:(1000*60*100)
    },
    store: MongoStore.create({
-      mongoUrl: 'mongodb+srv://varsha:harsh@atlascluster.pznuoqu.mongodb.net/'
+      mongoUrl: 'mongodb+srv://varsha:harsh@cluster1.tkzilvd.mongodb.net/?retryWrites=true&w=majority'
     },
   {
       mongooseConnection: db,
