@@ -1,41 +1,533 @@
-<link rel="stylesheet" href="/css/profile.css">
 
-<nav>
-    <div class="logo">
-    <h1>NodeJS Authentication </h1>
-    </div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#card">Card</a></li>
-        <li><a href="#about">About</a></li> 
-        <li> <a href="/users/sign-out">Sign Out</a></li> 
-    </ul>
-</nav>
-    <!-- cards -->
-    <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemQMLv4HcdRY7okNa_7Nb0BSZrDofUykbpZHNbhGkHg&s" alt="Card Image">
-        <div class="card-content">
-          <h3>Card Title 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo eu mauris malesuada tristique.</p>
-          <a href="#" class="btn">Read More</a>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Varsha-portfolio site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,800&family=Outfit:wght@500&family=Playfair+Display:ital,wght@1,900&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <!-- header section start-->
+    <header>
+        
+    <!-- <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a> -->
+    <!-- </div> -->
+        <div class="topnav" id="myTopnav">
+        <!-- <div class="left"> Varsha's Portfolio</div> -->
+        <!-- <div class="right"> -->
+        <a href="#home" class="active"> Varsha's Portfolio</a>
+        
+        
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#portfolio">Projects </a>
+                <a href="#contact">Contact Me</a>
+                <a href="/"><%= user.name %></a>
+                <a href="/users/sign-out">Sign Out</a>
+                
+        <!-- </div> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        
         </div>
-      </div>
+    </header>
+    <!-- header section end-->
+    <!-- main start -->
+    <main>
+        
+        <!-- first-section -->
+        <section class="firstSection">
+        
+        <div class="leftSection">Hi, My name is <span class="purple">Varsha</span> 
+                                <div>and I am a passionate </div>
+        
+                            
+            <span id="element"></span>
+            <div class="buttons">
+                <a href="/download" download="resume.pdf"><button class="btn" id="download" class="btn btn-primary my-5"> Download Resume</button></a>
+            <button class="btn"><a href="https://github.com/VarshaSahu03" class="github">View Github</a></button>
+            </div>
+        </div>
+        
+        <div class="rightSection">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/woman-programmer-working-on-a-new-project-7771248-6200254.png" 
+            alt="developer">
+        </div>
+        </section>
+
+        <!--about-->
+
+        <section>
+        <h1 class="section-heading mb75px center">
+                    <span>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    <span> My Profile </span>
+                </h1>
     
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemQMLv4HcdRY7okNa_7Nb0BSZrDofUykbpZHNbhGkHg&s" alt="Card Image">
-        <div class="card-content">
-          <h3>Card Title 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo eu mauris malesuada tristique.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
+    <section id="about">
+        
+                <div id="my-image" >
+                    <img src="../public/p.jpg">
+                    <div><h3>Web developer</h3></div>
+                </div>
+
+                <div id="about-para" >
+                        
+
+
+                    <p>
+                        <span class="text-highlight">Self-motivated</span> and <span class="text-highlight"> enthusiastic individual, strict with deadlines</span>, and always maintaining <span class="text-highlight">discipline</span>. As a developer, I aspire to do
+    something new and enhance my skills to solve<span class="text-highlight"> real-world problems</span>. I am an <span class="text-highlight">innovative</span> web developer experienced in building
+    <span class="text-highlight">responsive websites</span>.
+    <br><br>
+                    Date of Birth-18/09/2003<br>
+                    Qualification - Graduate in BSC Bio<br>
+                    Age - 20 year.
+                    
+                    </p>
+
+                </div>
+
+            </section>
+        </section>
+
+
+    <!--Education section-->
+        <h1 class="section-heading mb75px">
+                    <span>
+                        <i class="fas fa-graduation-cap"></i>
+                    </span>
+                    <span> Education </span>
+                </h1>
+    <section id="education">
+
+            
+
+                <div class="timeline">
+
+                    <div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <img src="../public/kg.png">
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue"> BSC </h3>
+                            <h4 class="experience-company-name ">KG Arts and Science College Raigarh </h4>
+                            <h5 class="experience-duration m0"> july 2020 - july 2023 </h5>
+
+                            <p class="experience-description text-align-justify">My graduation subjects are chemistry, zoology and botany. 
+                            <i>I have scored 75% in my graduation. </i> </p>
+                        </div>
+                        <div>
+                            <a href="https://drive.google.com/file/d/12QiP4S6QU9pKByMkMVdslQrAQySf9Vti/view" target="_blank"><button class="btn btn-primary my-5 bgcolor" > Certificate</button></a>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-box right ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <img src="../public/nielit.png">
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue"> Diploma in Computer </h3>
+                            <h4 class="experience-company-name "> NIELIT </h4>
+                            <h5 class="experience-duration m0">JULY 2021 - OCT 2022 </h5>
+                            <p class="experience-description text-align-justify"> I have learn python programming and libraries , IOT, Web designing and MS office in this time period. I explore lot of things in computer diplome.
+                                <i>I got 72% in this course.</i> </p>
+                        </div>
+                        <div>
+                            <a href="https://drive.google.com/file/d/12MkBSOgGWa3Aij-YfXQF8p_2crMpXwYF/view" target="_blank"><button class="btn btn-primary my-5 bgcolor">  Certificate</button></a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <img src="../public/logocn.png">
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue">Java + DSA </h3>
+                            <h4 class="experience-company-name ">Coding ninjas </h4>
+                            <h5 class="experience-duration m0"> nov 2022 - jan 2023</h5>
+
+                            <p class="experience-description text-align-justify">in this 3 month. I have complete my one tech stach core java with DSA. I improved my problem solving skills and learn many approch.</b> 
+                        
+                        </div>
+                        <div>
+                            <a href="https://certificate.codingninjas.com/view/96af568e813d5917" target="_blank"><button class="btn btn-primary my-5 bgcolor"> Java</button></a>
+                            <a href="https://certificate.codingninjas.com/view/1f5cacce370ab79b" target="_blank"><button class="btn btn-primary my-5 bgcolor"> DSA</button></a>
+
+                        </div>
+                        
+                    </div> <div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <img src="../public/logocn.png">
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue"> MERN stack </h3>
+                            <h4 class="experience-company-name "> Coding ninjas </h4>
+                            <h5 class="experience-duration m0"> feb 2023 - july 2023</h5>
+
+                            <p class="experience-description text-align-justify">In this tech stack, I had a lot of fun. I created numerous minor and major projects, such as a calculator, stopwatch, ping pong game, and the list goes on. I also worked on projects like authentication API, meal app, portfolio, iPod, etc. This allowed me to enhance my skills significantly. </p>
+                        </div>
+                        <div>
+                        <span>
+                            <a href="https://certificate.codingninjas.com/view/0da649490183ae98" target="_blank"><button class="btn btn-primary my-5 bgcolor"> Front End </button></a>
+
+                        </span>
+                        <span>
+                            <a href="https://certificate.codingninjas.com/view/09b3c81212b12f1f" target="_blank"><button class="btn btn-primary my-5 bgcolor"> Back End </button></a>
+
+                        </span>
+                        </div>
+                        
+                    </div>
+                    <div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <img src="../public/cg.png">
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue"> 12th </h3>
+                            <h4 class="experience-company-name "> CG Board </h4>
+                            <h5 class="experience-duration m0"> july 2018 - may 2020</h5>
+
+                            <p class="experience-description text-align-justify"> My 12th subject are Physics, Chemistry and Biology. And this time my favoirite subject is <b>Physics.</b> In my 12th 
+                            standard i participated on district level Science Quiz Compitition and i got first prize in this compition.
+                        <i>In board exam i scored 82.67%. And got rank 1 in my class.</i></p>
+                        </div>
+                        <div>
+                            <a href="https://drive.google.com/file/d/12_ju2K7RYR74eTwdLStHmPNBVrCsIMzm/view" target="_blank"><button class="btn btn-primary my-5 bgcolor"> Achievement and certificates</button></a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <img src="../public/cg.png">
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue"> 10th </h3>
+                            <h4 class="experience-company-name "> CG Board </h4>
+                            <h5 class="experience-duration m0"> july 2017 - may 2018</h5>
+
+                            <p class="experience-description text-align-justify"> My 10th subject are Maths, Science, English , Hindi, Scial Science and Sanskrit. And this time my favoirite subject is <b>Maths and Science.</b> 
+                        <i>In board exam i scored 90.67%. And got rank 1 in my class.</i><br/><b>I was honored with the "Adopted Daughter Appreciation" and the "Sahu Community Appreciation" certificates.</b></p>
+                        </div>
+                        <div>
+                            <a href="https://drive.google.com/file/d/12Kj58OZciHjMHCYgRJD_Mx7pNCfIcGTW/view" target="_blank"><button class="btn btn-primary my-5 bgcolor"> Achievement and certificates</button></a>
+
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="timeline-divider">
+                        <div class="timeline-traveller">
+                            <div>
+                                <i class="fas fa-plane"></i>
+                            <!-- <i class="fas fa-car-side"></i> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+        <!-- skill -->
+        <section id="skills" class="section">
+                <h1 class="section-heading mb75px ">
+                    <span>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </span>
+                    <span> Skills </span>
+                </h1>
+
+                <div class="skills-display">
+
+                    <div class="skill-progress">
+                        <div class="fifty-percent mb-blue">
+                            <div class="skill-name">
+                                <span> Java </span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="skill-progress">
+                        <div class="eighty-percent mb-light-purple">
+                            <div class="skill-name">
+                                <span> DSA </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="eighty-five-percent mb-orange">
+                            <div class="skill-name">
+                                <span> HTML </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="eighty-percent mb-light-purple">
+                            <div class="skill-name">
+                                <span> CSS </span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="skill-progress">
+                        <div class="eighty-percent mb-light-purple">
+                            <div class="skill-name">
+                                <span> Bootstrap </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="fifty-percent mb-teal">
+                            <div class="skill-name">
+                                <span> Javascript </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="fifty-percent mb-blue">
+                            <div class="skill-name">
+                                <span> NodeJs </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="eighty-percent mb-light-purple">
+                            <div class="skill-name">
+                                <span> MongoDB </span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="skill-progress">
+                        <div class="eighty-percent mb-light-purple">
+                            <div class="skill-name">
+                                <span> React js </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!-- second-section -->
+        <section id="portfolio" class="section">
+                <h1 class="section-heading mb75px">
+                    <span>
+                        <i class="fas fa-th-list"></i>
+                    </span>
+                    <span> Portfolio </span>
+                </h1>
+
+                <div id="portfolio-container">
+
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwasuvUAJRZIOYx9E4v6rkxGltMVTGPxVdIPTGiYe6mrPOc5L251BTmVlXFNW0FP0Pjg&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">Meal App</a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                                
+
+                            
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelQPtqDZFjgb9LWHTu_8FMu_z13X95PCHAg&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">Ecommerce API </a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvDW-wpUxTCiVsVlXWtryqL_l6YgJCCmIbQoljHBkxxhyzEjGY1wj8XW3ZVrNVggL1jk&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">IPOD </a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOAUkMQh8ajeSRfLWNjMmpN6W2hxcvkXgig&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">StopWatch App</a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhDcZ995njMAjL9SOpA4kT7tAYTc0nTGOIA&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">ping-pong game</a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT91tFByj6mA3EvN2HnUnLlD9wGQe4uicOhUQ&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">Authentication App</a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PtNpHMrbieAFehACIsT_WTxNmyM7k5N8IA&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Birthday_wisher/">Birthday wish </a> <br>
+                                <a href="https://github.com/VarshaSahu03/Birthday_wisher">Click me to reach github repository.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5uOK9AOpxx3KudHFY9Ng578C3TMLCLIfEvw09-mM5I8D0uSjXMkZSdxH5c7LSkX45PH0&usqp=CAUU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">Issue Tracker</a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuR_5aH77DqGoBMmNNTrRkvQbkN6ZnK8P7sg&usqp=CAU">
+                        <div class="portfolio-details">
+                            <p>
+                                <a href="https://varshasahu03.github.io/Meal-App/">TODO List</a> <br>
+                                <a href="https://github.com/VarshaSahu03/Meal-App">Click me to reach github repository.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h1 class="section-heading mb50px">
+                    <span>
+                        <i class="far fa-address-card"></i>
+                    </span>
+                    <span> Contact </span>
+                </h1>
+                <div id="contact-container">
+
+                    <div id="contact-form-container">
+                        <form id="contact-form" action="/send" method="post">
+                            <input id="input-name" name="name" type="text" placeholder="Your Name">
+                            <input id="input-email" name="email" type="text" required placeholder="Your Email">
+                            <textarea id="input-message" name="message" rows="2" cols=40 placeholder="Message"></textarea>
+                            <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                    <div id="my-details-container">
+
+                        <h3> Get In touch </h3>
+                        
+                        <div class="my-details-info-container">
+                            <i class="far fa-envelope"></i>
+                            <span>varsha981sahu@gmail.com</span>
+                        </div>
+                        
+                        <div class="my-details-info-container">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>9303468060</span>
+                        </div>
+                        <p> whtsapp no.- 9303468060</p>
+                        <h3> My Address </h3>
+                        
+                        <div class="my-details-info-container">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Raigarh, Chhattisgarh, India</span>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59232.41877688069!2d83.35387647301471!3d21.895067866328997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a27253cf3eb615d%3A0x29629b8b0a92e6e!2sRaigarh%2C%20Chhattisgarh%20496001!5e0!3m2!1sen!2sin!4v1693884759468!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    </div>
+                </div>
+
+                <div class="text-center social-icons">
+
+                    <ul class="horizontal-list">
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/varsha-sahu-7b8153260/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+
+                        
+
+                        <li>
+                            <a href="https://github.com/VarshaSahu03" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100070865746966">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                    
+                    </ul>
+                </div>
+            </section>
+        
+    </main>
+    <!-- main end -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="/js/script.js"></script>
     
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemQMLv4HcdRY7okNa_7Nb0BSZrDofUykbpZHNbhGkHg&s" alt="Card Image">
-        <div class="card-content">
-          <h3>Card Title 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo leo eu mauris malesuada tristique.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-   
+    <script src=
+    "https://code.jquery.com/jquery-3.6.0.js"
+            integrity=
+    "sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script src=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity=
+    "sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous">
+    </script>
+    <!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    -->
+    
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    
+
